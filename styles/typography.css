@@ -1,0 +1,15 @@
+body {
+	font-family: "Space Mono", monospace;
+	color: var(--text-color);
+}
+
+h1 {
+	font-weight: 400;
+	margin: 4px;
+	text-align: left;
+}
+
+.bold {
+	display: inline-block;
+	font-weight: bold;
+}
