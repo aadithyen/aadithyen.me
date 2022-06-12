@@ -1,75 +1,83 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color);
-  display: flex;
-  align-items: flex-end;
-  height: 100vh;
+	background-color: var(--background-color);
+	display: flex;
+	align-items: flex-end;
+	min-height: 100vh;
+	min-height: fill-available;
+	min-height: -webkit-fill-available;
+}
+
+html {
+	height: fill-available;
+	height: -webkit-fill-available;
 }
 
 .container {
-  margin: 100px 10px;
+	margin: 100px 10px;
 }
 
 .typing {
-  height: 50px;
-  display: inline-flex;
-  flex-direction: column;
-  line-height: 50px;
-  overflow: hidden;
-  --no-of-words: 4;
-  --time: 2s
+	height: 50px;
+	display: inline-flex;
+	flex-direction: column;
+	line-height: 50px;
+	overflow: hidden;
+	--no-of-words: 4;
+	--time: 2s;
 }
 
 .typing li {
-  list-style: none;
-  position: relative;
-  text-align: left;
-  top: 0;
-  animation: slide calc(var(--no-of-words) * var(--time)) steps(var(--no-of-words)) infinite;
+	list-style: none;
+	position: relative;
+	text-align: left;
+	top: 0;
+	animation: slide calc(var(--no-of-words) * var(--time))
+		steps(var(--no-of-words)) infinite;
 }
 
 @keyframes slide {
-  100% {
-    top: -400%;
-  }
+	100% {
+		top: -400%;
+	}
 }
 
 .typing li span {
-  position: relative;
+	position: relative;
 }
 
 .typing li span::after {
-  content: "";
-  position: absolute;
-  background-color: var(--background-color);
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-left: 2px solid;
-  animation: typing var(--time) steps(11) infinite;
+	content: "";
+	position: absolute;
+	background-color: var(--background-color);
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-left: 2px solid;
+	animation: typing var(--time) steps(11) infinite;
 }
 
 p {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 @keyframes typing {
-  50% {
-    left: 100%;
-  }
+	50% {
+		left: 100%;
+	}
 
-  70% {
-    left: 100%;
-  }
+	70% {
+		left: 100%;
+	}
 }
 
 @media screen and (min-width: 600px) {
-  .container {
-    margin: 10vw 10vw;
-  }
+	.container {
+		margin: 10vw 10vw;
+	}
 }
