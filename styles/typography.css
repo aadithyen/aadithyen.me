@@ -13,3 +13,11 @@ h1 {
 	display: inline-block;
 	font-weight: bold;
 }
+
+p {
+	text-align: justify;
+}
+
+a {
+	color: inherit;
+}

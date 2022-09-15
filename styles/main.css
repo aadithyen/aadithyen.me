@@ -7,19 +7,58 @@
 body {
 	background-color: var(--background-color);
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	padding: 0 10px;
+	padding-bottom: 50px;
 	min-height: 100vh;
-	min-height: fill-available;
 	min-height: -webkit-fill-available;
+	min-height: fill-available;
+	gap: 100px;
 }
 
 html {
-	height: fill-available;
 	height: -webkit-fill-available;
+	height: fill-available;
 }
 
-.container {
-	margin: 100px 10px;
+.section {
+	display: block;
+}
+
+.intro-text {
+	margin-top: 35vh;
+}
+
+.stuff li {
+	margin-bottom: 20px;
+}
+
+.socials > div {
+	margin-top: 10px;
+	display: flex;
+	gap: 20px;
+}
+
+.socials .icon {
+	background-color: var(--text-color);
+	min-height: 30px;
+	min-width: 30px;
+	display: inline-block;
+}
+
+.socials .instagram {
+	-webkit-mask: url(../assets/icons/instagram.svg) no-repeat center;
+	mask: url(../assets/icons/instagram.svg) no-repeat center;
+}
+
+.socials .github {
+	-webkit-mask: url(../assets/icons/github.svg) no-repeat center;
+	mask: url(../assets/icons/github.svg) no-repeat center;
+}
+
+.socials .linkedin {
+	-webkit-mask: url(../assets/icons/linkedin.svg) no-repeat center;
+	mask: url(../assets/icons/linkedin.svg) no-repeat center;
 }
 
 .typing {
@@ -62,10 +101,6 @@ html {
 	animation: typing var(--time) steps(11) infinite;
 }
 
-p {
-	margin-top: 20px;
-}
-
 @keyframes typing {
 	50% {
 		left: 100%;
@@ -77,7 +112,8 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-	.container {
-		margin: 10vw 10vw;
+	body {
+		padding: 0 10vw;
+		padding-bottom: 50px;
 	}
 }
