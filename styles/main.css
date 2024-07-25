@@ -1,119 +1,128 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: var(--background-color);
-	display: flex;
-	flex-direction: column;
-	padding: 0 10px;
-	padding-bottom: 50px;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
-	min-height: fill-available;
-	gap: 100px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+    gap: 100px;
 }
 
 html {
-	height: -webkit-fill-available;
-	height: fill-available;
+    height: -webkit-fill-available;
+    height: fill-available;
 }
 
 .section {
-	display: block;
+    display: block;
+}
+
+.section > h2 {
+    margin-bottom: 10px;
 }
 
 .intro-text {
-	margin-top: 35vh;
+    margin-top: 35vh;
 }
 
-.stuff li {
-	margin-bottom: 20px;
+.stuff li,
+.experience li {
+    margin-bottom: 50px;
 }
 
 .socials > div {
-	margin-top: 10px;
-	display: flex;
-	gap: 30px;
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
 }
 
 .socials .icon {
-	background-color: var(--text-color);
-	min-height: 30px;
-	min-width: 30px;
-	display: inline-block;
+    background-color: var(--text-color);
+    min-height: 30px;
+    min-width: 30px;
+    display: inline-block;
 }
 
 .socials .instagram {
-	-webkit-mask: url(../assets/icons/instagram.svg) no-repeat center;
-	mask: url(../assets/icons/instagram.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/instagram.svg) no-repeat center;
+    mask: url(../assets/icons/instagram.svg) no-repeat center;
 }
 
 .socials .github {
-	-webkit-mask: url(../assets/icons/github.svg) no-repeat center;
-	mask: url(../assets/icons/github.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/github.svg) no-repeat center;
+    mask: url(../assets/icons/github.svg) no-repeat center;
 }
 
 .socials .linkedin {
-	-webkit-mask: url(../assets/icons/linkedin.svg) no-repeat center;
-	mask: url(../assets/icons/linkedin.svg) no-repeat center;
+    -webkit-mask: url(../assets/icons/linkedin.svg) no-repeat center;
+    mask: url(../assets/icons/linkedin.svg) no-repeat center;
 }
 
 .typing {
-	height: 50px;
-	display: inline-flex;
-	flex-direction: column;
-	line-height: 50px;
-	overflow: hidden;
-	--no-of-words: 4;
-	--time: 2s;
+    height: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 50px;
+    overflow: hidden;
+    --no-of-words: 3;
+    --time: 1.75s;
 }
 
 .typing li {
-	list-style: none;
-	position: relative;
-	text-align: left;
-	top: 0;
-	animation: changeWord calc(var(--no-of-words) * var(--time))
-		steps(var(--no-of-words)) infinite;
+    list-style: none;
+    position: relative;
+    text-align: left;
+    top: 0;
+    animation: changeWord calc(var(--no-of-words) * var(--time)) steps(var(--no-of-words)) infinite;
 }
 
 @keyframes changeWord {
-	100% {
-		top: calc(-100% * var(--no-of-words));
-	}
+    100% {
+        top: calc(-100% * var(--no-of-words));
+    }
 }
 
 .typing li span {
-	position: relative;
+    position: relative;
 }
 
 .typing li span::after {
-	content: "";
-	position: absolute;
-	background-color: var(--background-color);
-	left: 0;
-	height: 100%;
-	width: 100%;
-	border-left: 2px solid;
-	animation: typing var(--time) steps(11) infinite;
+    content: "";
+    position: absolute;
+    background-color: var(--background-color);
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid;
+    animation: typing var(--time) steps(15) infinite;
 }
 
 @keyframes typing {
-	50% {
-		left: 100%;
-	}
+    45% {
+        left: 100%;
+    }
 
-	70% {
-		left: 100%;
-	}
+    70% {
+        left: 100%;
+    }
 }
 
 @media screen and (min-width: 600px) {
-	body {
-		padding: 0 15vw;
-		padding-bottom: 50px;
-	}
+    body {
+        padding: 0 15vw;
+        padding-bottom: 50px;
+    }
+
+    .stuff li,
+    .experience li {
+        margin-bottom: 30px;
+    }
 }

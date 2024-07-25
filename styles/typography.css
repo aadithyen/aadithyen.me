@@ -1,23 +1,28 @@
 body {
-	font-family: "Space Mono", monospace;
-	color: var(--text-color);
+    font-family: "Space Mono", monospace;
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 h1 {
-	font-weight: 400;
-	margin: 4px;
-	text-align: left;
+    font-weight: 400;
+    margin: 4px;
+    text-align: left;
 }
 
 .bold {
-	display: inline-block;
-	font-weight: bold;
+    display: inline-block;
+    font-weight: bold;
 }
 
 p {
-	text-align: justify;
+    text-align: justify;
 }
 
 a {
-	color: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style-type: circle;
 }
