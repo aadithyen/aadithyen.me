@@ -2,8 +2,7 @@
   "name": "aadithyen.me",
   "version": "1.0.0",
   "description": "Personal website of Aadithye N",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Aadithye N (https://aadithyen.me)",
   "devEngines": {
     "packageManager": {
@@ -12,5 +11,9 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.10.1"
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
 }
