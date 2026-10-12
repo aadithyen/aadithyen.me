@@ -2,7 +2,10 @@
   "name": "aadithyen.me",
   "version": "1.0.0",
   "description": "Personal website of Aadithye N",
-  "scripts": {},
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
   "author": "Aadithye N (https://aadithyen.me)",
   "devEngines": {
     "packageManager": {
