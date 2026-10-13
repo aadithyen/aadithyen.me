@@ -1,0 +1,22 @@
+{
+  "name": "aadithyen.me",
+  "version": "1.0.0",
+  "description": "Personal website of Aadithye N",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "author": "Aadithye N (https://aadithyen.me)",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

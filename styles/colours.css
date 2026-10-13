@@ -1,11 +1,11 @@
 :root {
-    --background-color: #81b29a;
-    --text-color: #231f20;
+  --background-color: #f4f1de;
+  --text-color: #191716;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #231f20;
-        --text-color: #81b29a;
-    }
+  :root {
+    --background-color: #191716;
+    --text-color: #f4f1de;
+  }
 }
