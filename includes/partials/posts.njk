@@ -1,0 +1,12 @@
+<section>
+    <h2>Blog</h2>
+    {%- for post in collections.post -%}
+        <a href="{{ post.url }}">
+            <article>
+                <h4>{{ post.data.title }}</h4>
+                <p>{{ post.templateContent.excerpt }}</p>
+                <time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time>
+            </article>
+        </a>
+    {%- endfor -%}
+</section>

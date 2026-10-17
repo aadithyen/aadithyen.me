@@ -1,0 +1,19 @@
+h1 {
+  /* font-weight: 600; */
+}
+
+body {
+  padding-top: 10vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 1rem;
+}

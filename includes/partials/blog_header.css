@@ -1,0 +1,8 @@
+@scope header {
+  a {
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
