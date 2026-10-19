@@ -22,10 +22,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDate", (dateObj) =>
     dateObj.toISOString().slice(0, 10),
   );
-
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true,
-  });
 }
 
 export const config = {

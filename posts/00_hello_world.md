@@ -1,11 +1,14 @@
 ---
 title: I say hello world
+description: Adding a blog here, so first post has to be hello world!
 layout: layouts/blog.njk
 tags: post
 date: git Created
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus at nibh feugiat, sed faucibus enim porttitor.<!-- excerpt --> Nulla id fermentum risus. Phasellus tristique viverra justo, auctor pellentesque ipsum varius ac. Aenean eget quam vel elit faucibus condimentum ac sit amet dolor. Sed lacinia metus eros, vitae viverra tellus volutpat nec. Ut a venenatis dolor, ac facilisis lorem. Fusce vitae tortor rhoncus, mattis lorem a, efficitur turpis. In lobortis facilisis enim at luctus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus at nibh feugiat, sed faucibus enim porttitor.
+
+Nulla id fermentum risus. Phasellus tristique viverra justo, auctor pellentesque ipsum varius ac. Aenean eget quam vel elit faucibus condimentum ac sit amet dolor. Sed lacinia metus eros, vitae viverra tellus volutpat nec. Ut a venenatis dolor, ac facilisis lorem. Fusce vitae tortor rhoncus, mattis lorem a, efficitur turpis. In lobortis facilisis enim at luctus.
 
 Fusce eleifend dui sit amet lacus pharetra consequat. Etiam nulla nibh, gravida quis eleifend quis, imperdiet at lorem. Sed quis eros nisi. Sed eu mi et massa varius accumsan. Sed non ante vulputate, laoreet dui a, faucibus erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed magna massa, vehicula non arcu vel, maximus pellentesque lectus. Suspendisse vel vehicula lectus.
 

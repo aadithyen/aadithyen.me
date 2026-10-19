@@ -1,12 +1,22 @@
-<section>
-    <h2>Blog</h2>
-    {%- for post in collections.post -%}
-        <a href="{{ post.url }}">
-            <article>
-                <h4>{{ post.data.title }}</h4>
-                <p>{{ post.templateContent.excerpt }}</p>
-                <time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time>
-            </article>
-        </a>
-    {%- endfor -%}
+{% css %}
+{% include "partials/posts.css" %}
+{% endcss %}
+<section class="featured-posts">
+    <h2>Read my recent blogs</h2>
+    <div class="post-list">
+        {%- for post in collections.post -%}
+            <a href="{{ post.url }}">
+                <article>
+                    <div class="post-header">
+                        <h3 class="post-title">{{ post.data.title }}</h3>
+                        <p class="post-date"><time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time></p>
+                    </div>
+                    <p>{{ post.data.description }}</p>
+                </article>
+            </a>
+        {%- endfor -%}
+    </div>
+    <a href="/posts">
+        <p>view more</p>
+    </a>
 </section>
