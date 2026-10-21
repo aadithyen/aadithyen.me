@@ -1,22 +1,22 @@
 {% css %}
-{% include "partials/posts.css" %}
+{% include "partials/featured_posts.css" %}
 {% endcss %}
 <section class="featured-posts">
-    <h2>Read my recent blogs</h2>
+    <h2>Few of my  posts</h2>
     <div class="post-list">
-        {%- for post in collections.post -%}
+        {%- for post in collections.posts.reverse().slice(0,3) -%}
             <a href="{{ post.url }}">
                 <article>
                     <div class="post-header">
                         <h3 class="post-title">{{ post.data.title }}</h3>
-                        <p class="post-date"><time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time></p>
+                        <small class="post-date"><time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time></small>
                     </div>
                     <p>{{ post.data.description }}</p>
                 </article>
             </a>
         {%- endfor -%}
     </div>
-    <a href="/posts">
-        <p>view more</p>
+    <a href="/pages/blog.njk">
+        <small>View More</small>
     </a>
 </section>

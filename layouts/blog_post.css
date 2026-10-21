@@ -1,12 +1,5 @@
-h1 {
-  /* font-weight: 600; */
-}
-
-body {
-  padding-top: 10vh;
-}
-
 main {
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;

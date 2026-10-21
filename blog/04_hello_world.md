@@ -1,9 +1,6 @@
 ---
-title: I say hello world
+title: I say hello world newest
 description: Adding a blog here, so first post has to be hello world!
-layout: layouts/blog.njk
-tags: post
-date: git Created
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus at nibh feugiat, sed faucibus enim porttitor.

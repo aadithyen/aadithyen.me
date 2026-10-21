@@ -1,0 +1,61 @@
+.section {
+  display: block;
+}
+
+.section > h2 {
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  margin-top: 20vh;
+}
+
+.typing {
+  height: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 50px;
+  overflow: hidden;
+  --no-of-words: 3;
+  --time: 1.75s;
+}
+
+.typing li {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  top: 0;
+  animation: changeWord calc(var(--no-of-words) * var(--time))
+    steps(var(--no-of-words)) infinite;
+}
+
+@keyframes changeWord {
+  100% {
+    top: calc(-100% * var(--no-of-words));
+  }
+}
+
+.typing li span {
+  position: relative;
+}
+
+.typing li span::after {
+  content: "";
+  position: absolute;
+  background-color: var(--background-color);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid;
+  animation: typing var(--time) steps(15) infinite;
+}
+
+@keyframes typing {
+  45% {
+    left: 100%;
+  }
+
+  70% {
+    left: 100%;
+  }
+}

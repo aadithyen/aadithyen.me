@@ -10,6 +10,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
   eleventyConfig.addPassthroughCopy("assets");
 
+  eleventyConfig.addWatchTarget("**/*.css");
+
   eleventyConfig.addFilter("readableDate", (dateObj) =>
     new Intl.DateTimeFormat("en-GB", {
       day: "numeric",
@@ -27,7 +29,7 @@ export default async function (eleventyConfig) {
 export const config = {
   dir: {
     input: ".",
-    includes: "includes",
+    includes: ".",
     output: "site",
   },
 };

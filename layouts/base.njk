@@ -18,16 +18,12 @@
               as="style"
               onload="this.rel = 'stylesheet'" />
         <link rel="stylesheet" href="/styles/main.css" />
-        <link rel="stylesheet" href="/styles/blog.css" />
         <link rel="stylesheet" href="/styles/typography.css" />
         <link rel="stylesheet" href="/styles/colours.css" />
+        <style>{% getBundle "css" %}</style>
     </head>
     <body>
-        {% include "partials/blog_header.njk" %}
-        <main>
-            <h1>{{ title }}</h1>
-            <time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time>
-            {{ content | safe }}
-        </main>
+        {% include "partials/header.njk" %}
+        {{ content | safe }}
     </body>
 </html>
