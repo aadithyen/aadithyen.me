@@ -10,6 +10,15 @@
   margin-top: 20vh;
 }
 
+.intro-text h1 {
+  font-weight: normal;
+}
+
+.intro-text h1.bold {
+  display: inline-block;
+  font-weight: bold;
+}
+
 .typing {
   height: 50px;
   display: inline-flex;
@@ -25,8 +34,7 @@
   position: relative;
   text-align: left;
   top: 0;
-  animation: changeWord calc(var(--no-of-words) * var(--time))
-    steps(var(--no-of-words)) infinite;
+  animation: changeWord calc(var(--no-of-words) * var(--time)) steps(var(--no-of-words)) infinite;
 }
 
 @keyframes changeWord {

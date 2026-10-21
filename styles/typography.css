@@ -5,13 +5,12 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  margin: 4px;
-  text-align: left;
-}
-
 .bold {
   display: inline-block;
+  font-weight: bold;
+}
+
+h1 {
   font-weight: bold;
 }
 
