@@ -3,6 +3,8 @@ title: I say hello world newest
 description: Adding a blog here, so first post has to be hello world!
 ---
 
+fileSlug: {{ page.fileSlug }} / id: {{ id }}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus at nibh feugiat, sed faucibus enim porttitor.
 
 Nulla id fermentum risus. Phasellus tristique viverra justo, auctor pellentesque ipsum varius ac. Aenean eget quam vel elit faucibus condimentum ac sit amet dolor. Sed lacinia metus eros, vitae viverra tellus volutpat nec. Ut a venenatis dolor, ac facilisis lorem. Fusce vitae tortor rhoncus, mattis lorem a, efficitur turpis. In lobortis facilisis enim at luctus.

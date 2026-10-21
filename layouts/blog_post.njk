@@ -6,6 +6,9 @@ layout: layouts/base.njk
 {% include "layouts/blog_post.css" %}
 {% endcss %}
 <main>
+    <a href="../..">
+        <small>&lt;= All</small>
+    </a>
     <h1>{{ title }}</h1>
     <time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time>
     {{ content | safe }}

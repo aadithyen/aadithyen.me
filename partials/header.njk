@@ -3,8 +3,11 @@
 {% endcss %}
 <header>
     {% for pg in collections.pages | sort(false, false, "data.order") %}
-        <!-- {{ pg.url }} | {{ page.url }} -->
-        <a href="{{ pg.url }}"
-           {% if pg.url==page.url %} class="active" {% endif %}>{{ pg.data.title }}</a>
+        {% if pg.url == "/" %}
+            {% set isActive = (page.url == "/") %}
+        {% else %}
+            {% set isActive = page.url.startsWith(pg.url) %}
+        {% endif %}
+        <a href="{{ pg.url }}" {% if isActive %} class="active" {% endif %}>{{ pg.data.title }}</a>
     {% endfor %}
 </header>

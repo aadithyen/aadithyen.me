@@ -1,5 +1,8 @@
 {
   "layout": "layouts/blog_post.njk",
   "tags": ["posts"],
-  "permalink": "blog/{{title | slugify}}/"
+  "eleventyComputed": {
+    "id": "{{ page.fileSlug | split: '_' | first }}"
+  },
+  "permalink": "/blog/{{ page.fileSlug | split: '_' | first }}/{{ title | slugify }}/"
 }
