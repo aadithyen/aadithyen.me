@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+article .post-date {
+  font-size: 0.9rem;
+}

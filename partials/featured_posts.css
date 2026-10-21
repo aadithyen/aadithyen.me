@@ -1,0 +1,23 @@
+section.featured-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.featured-posts .post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.featured-posts .post-list a {
+  text-decoration: none;
+}
+
+section.featured-posts .post-list a:hover {
+  text-decoration: underline;
+}
+
+section.featured-posts article .post-date {
+  font-size: 0.9rem;
+}

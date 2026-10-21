@@ -17,9 +17,13 @@
               rel="preload"
               as="style"
               onload="this.rel = 'stylesheet'" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/typography.css" />
-        <link rel="stylesheet" href="styles/colours.css" />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link rel="stylesheet" href="/styles/typography.css" />
+        <link rel="stylesheet" href="/styles/colours.css" />
+        <style>{% getBundle "css" %}</style>
     </head>
-    <body>{{ content | safe }}</body>
+    <body>
+        {% include "partials/header.njk" %}
+        {{ content | safe }}
+    </body>
 </html>

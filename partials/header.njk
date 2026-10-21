@@ -1,0 +1,13 @@
+{% css %}
+{% include "partials/header.css" %}
+{% endcss %}
+<header>
+    {% for pg in collections.pages | sort(false, false, "data.order") %}
+        {% if pg.url == "/" %}
+            {% set isActive = (page.url == "/") %}
+        {% else %}
+            {% set isActive = page.url.startsWith(pg.url) %}
+        {% endif %}
+        <a href="{{ pg.url }}" {% if isActive %} class="active" {% endif %}>{{ pg.data.title }}</a>
+    {% endfor %}
+</header>

@@ -1,0 +1,25 @@
+{% css %}
+{% include "partials/featured_posts.css" %}
+{% endcss %}
+{% set featured_count = 3 %}
+<section class="featured-posts">
+    <h2>Latest posts</h2>
+    <div class="post-list">
+        {% for post in (collections.posts | sort(true, false, 'data.id')).slice(0,3) %}
+            <a href="{{ post.url }}">
+                <article>
+                    <div class="post-header">
+                        <h3 class="post-title">{{ post.data.title }}</h3>
+                        <small class="post-date"><time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time></small>
+                    </div>
+                    <p>{{ post.data.description }}</p>
+                </article>
+            </a>
+        {%- endfor -%}
+    </div>
+    {% if collections.posts.length > featured_count %}
+        <a href="/blog">
+            <small>View More</small>
+        </a>
+    {% endif %}
+</section>

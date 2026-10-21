@@ -1,0 +1,32 @@
+.stuff li,
+.experience li {
+  margin-bottom: 50px;
+}
+
+.socials > div {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+
+.socials .icon {
+  background-color: var(--text-color);
+  min-height: 30px;
+  min-width: 30px;
+  display: inline-block;
+}
+
+.socials .instagram {
+  -webkit-mask: url(../assets/icons/instagram.svg) no-repeat center;
+  mask: url(../assets/icons/instagram.svg) no-repeat center;
+}
+
+.socials .github {
+  -webkit-mask: url(../assets/icons/github.svg) no-repeat center;
+  mask: url(../assets/icons/github.svg) no-repeat center;
+}
+
+.socials .linkedin {
+  -webkit-mask: url(../assets/icons/linkedin.svg) no-repeat center;
+  mask: url(../assets/icons/linkedin.svg) no-repeat center;
+}
