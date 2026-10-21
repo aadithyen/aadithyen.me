@@ -5,6 +5,8 @@ export default async function (eleventyConfig) {
   // ignore files
   eleventyConfig.ignores.add("README.md");
   eleventyConfig.ignores.add("site");
+  eleventyConfig.ignores.add("layouts");
+  eleventyConfig.ignores.add("partials");
 
   // passthrough files
   eleventyConfig.addPassthroughCopy("styles");
@@ -21,9 +23,7 @@ export default async function (eleventyConfig) {
     }).format(dateObj),
   );
 
-  eleventyConfig.addFilter("htmlDate", (dateObj) =>
-    dateObj.toISOString().slice(0, 10),
-  );
+  eleventyConfig.addFilter("htmlDate", (dateObj) => dateObj.toISOString().slice(0, 10));
 }
 
 export const config = {
