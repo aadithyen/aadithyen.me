@@ -9,11 +9,16 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 10px;
-  padding-bottom: 50px;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   min-height: fill-available;
   gap: 100px;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 5rem;
 }
 
 html {
@@ -24,6 +29,5 @@ html {
 @media screen and (min-width: 600px) {
   body {
     padding: 0 20vw;
-    padding-bottom: 50px;
   }
 }

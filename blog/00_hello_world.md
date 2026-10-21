@@ -1,33 +1,46 @@
 ---
-title: I say hello world oldest
+title: Saying hello world and remembering IMAD
 description: Adding a blog here, so first post has to be hello world!
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus at nibh feugiat, sed faucibus enim porttitor.
+Adding a blog here, finally after procrastinating for so long. But there is some
+nostalgia about it.
 
-Nulla id fermentum risus. Phasellus tristique viverra justo, auctor pellentesque ipsum varius ac. Aenean eget quam vel elit faucibus condimentum ac sit amet dolor. Sed lacinia metus eros, vitae viverra tellus volutpat nec. Ut a venenatis dolor, ac facilisis lorem. Fusce vitae tortor rhoncus, mattis lorem a, efficitur turpis. In lobortis facilisis enim at luctus.
+Ten years go, there was an
+[IMAD](https://onlinecourses-archive.nptel.ac.in/noc16_cs23/preview) NPTEL
+course which got heavily advertised. It was free, like all (if I'm not wrong)
+NPTEL courses but you had to pay for the certification exam. My mom saw it and
+then my brother encouraged me to sign up for it.
 
-Fusce eleifend dui sit amet lacus pharetra consequat. Etiam nulla nibh, gravida quis eleifend quis, imperdiet at lorem. Sed quis eros nisi. Sed eu mi et massa varius accumsan. Sed non ante vulputate, laoreet dui a, faucibus erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed magna massa, vehicula non arcu vel, maximus pellentesque lectus. Suspendisse vel vehicula lectus.
+It was pretty simple enough and we had to build an app as part of the
+coursework. What I build (with a lot of help from my brother) was **feed**. I
+believe the domain at that point was feed._then_github_username_.github.io or
+something. I couldn't pay for hosting, although there were some free hosting
+providers like 3owl at that point. So we went serverless. (Yes, the name is not
+exactly correct). 2016? I'm on the serverless bandwagon before it became
+_"trendy"._
 
-## Stuff here
+I would attach a screenshot if I had one, or if I could have at least found the
+source code. The repo is empty on my GitHub; I have no idea where I served it
+from. We may have had hosting provided by [Hasura](https://hasura.io/) as they
+were partnering for this course? It was a blue page with line pattern to mimic a
+notebook. Had a bird or paper airplane or something. It wasn't a descriptive
+blog, but like a small personal Twitter. Remember Twitter? I could post and
+others could like or comment. The bind-blowing feature for me was realtime. You
+could see activity without reloading!? Login with Google? For my website!?
+Templates which meant I could divide parts of single page into different files?
+I was so proud of it (although I didn't do much of the heavy-lifting).
 
-Aliquam sapien lorem, porttitor at blandit vel, consectetur in enim. Nunc dolor est, euismod a venenatis vel, cursus lacinia elit. Duis mollis ornare elementum. Mauris non hendrerit eros, non dictum mi. Duis gravida auctor dui, a suscipit eros laoreet vel. Pellentesque faucibus dolor euismod tortor sagittis, eu auctor ex cursus. Sed consequat viverra ultrices. Vestibulum facilisis porta molestie. Donec non diam justo. Morbi consectetur, magna eu blandit fringilla, nibh eros finibus risus, sed gravida tellus magna eget felis.
+The templating was done using [Handlebars](https://handlebarsjs.com) if I
+remember correctly. A couple of years after that I went into React and just
+threw React at every problem that needed a solution, whether the solution was
+React or not. Adding a blog here took some time because I wanted to do it
+statically. I didn't want to use React. I could have used Gatsby, but I like
+[11ty](https://11ty.dev). I didn't want to generate it either. So here we are,
+exactly 10 years after I first had an online blog, I have one again. This one is
+even lighter; Mostly because I ain't supporting comments this time around.
 
-Proin luctus urna et neque aliquam, et tristique neque feugiat. Etiam at sem a libero ornare mattis. Aenean mollis rutrum augue vel posuere. Nulla id odio leo. Proin ac maximus eros, sit amet luctus ipsum. Curabitur porttitor quis elit et aliquet. Curabitur laoreet, velit in finibus mollis, tellus quam venenatis urna, quis pharetra mi est a augue. Morbi nec fringilla mi. Aliquam lacinia porta magna, id dictum elit semper porttitor. Mauris aliquam sem venenatis enim imperdiet lobortis. Donec diam lacus, elementum vitae posuere gravida, pulvinar id orci. Nam et libero dolor. Donec imperdiet luctus urna ac gravida. Praesent tincidunt pulvinar nibh, quis laoreet lacus hendrerit eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+I've added pagination and stuff. But time will tell whether it'll be used.
+Hopefully not too lazy to write the next one.
 
-## Mo stuff here
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce vehicula pellentesque ante, sed tempor ipsum iaculis sed. Proin pretium risus in mi cursus, eu tincidunt nunc aliquet. Morbi pretium congue erat, in ultrices nulla lobortis sit amet. Curabitur semper lectus in augue venenatis sodales. Nullam enim augue, feugiat rhoncus ornare nec, facilisis at lectus. Fusce pharetra sem orci, vel tristique lacus sodales ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque bibendum luctus justo, sit amet facilisis est mattis ut. Aliquam dui leo, lacinia porta porttitor a, posuere nec lacus.
-
-`Proin in pretium enim. Fusce sit amet consequat lorem. Praesent consectetur nec neque quis tincidunt. Nullam scelerisque enim viverra, lacinia erat nec, efficitur neque. In vel commodo sem. Vestibulum cursus nisi ut mauris interdum ornare. Aenean semper tincidunt odio, nec semper quam varius ac. Donec facilisis commodo fermentum. Aenean nec quam non nibh faucibus ullamcorper ut eu risus. Nam velit mauris, hendrerit sed ligula et, cursus imperdiet eros. Sed a arcu scelerisque, egestas mi sed, porta leo. Integer quis metus ullamcorper, semper mauris ut, vulputate odio.`
-
-`aasdf
-sdfadsf`
-
-In ultrices ante sed magna tempus, sit amet rhoncus neque convallis. Nulla erat augue, lacinia et luctus sit amet, eleifend id purus. Pellentesque vel justo eu dui laoreet molestie. Nulla nisi ante, efficitur sit amet posuere et, rutrum ac orci. Nam aliquet est ut ante porta, a molestie elit auctor. Aliquam id nibh massa. Quisque id semper purus, non tincidunt purus. Aenean pharetra sagittis sollicitudin. Fusce vestibulum erat id turpis porta, ut laoreet eros congue.
-
-Duis eros lacus, lacinia nec porttitor vitae, convallis in purus. Duis sit amet sollicitudin tellus, quis aliquam massa. Proin erat leo, ultricies et ante ac, laoreet laoreet velit. Sed vulputate nulla non metus ornare, vitae dictum ligula tincidunt. Suspendisse consectetur nulla erat, sit amet consequat nisi lacinia ut. Nulla enim ligula, congue et mi sed, suscipit tempus odio. Nam lacinia molestie tortor ut efficitur. Nulla molestie nisl eget quam hendrerit, id posuere nisl tincidunt. Maecenas eu iaculis urna, ac interdum massa. Mauris elit elit, tincidunt at ultricies eget, vehicula quis ligula. Nam in faucibus massa, nec volutpat felis. Nunc congue lorem ac nisl molestie euismod. Phasellus lectus erat, porta convallis orci a, ornare ultricies dui. Nullam ex risus, auctor a magna et, pharetra aliquam massa. Nam eget urna ligula.
-
-Duis euismod justo eu tempor porta. Vestibulum et metus eleifend, tincidunt libero in, laoreet magna. Proin pellentesque, justo eu porttitor aliquet, massa odio dictum nulla, id viverra lorem arcu quis libero. Sed eget egestas nulla. Sed sit amet elit eget diam molestie suscipit. Pellentesque vitae tempus elit. Nullam molestie urna id egestas efficitur. In rhoncus velit leo, convallis pharetra ligula viverra non. Sed et venenatis ligula, vel sagittis mauris. Donec scelerisque fermentum felis, eu tristique elit pretium nec. Cras semper enim id quam maximus rutrum quis tempus enim. In quam leo, ultrices sed porttitor et, ornare id arcu. Nunc id fermentum metus.
-
-Aliquam fringilla nulla nunc, at eleifend tellus tempus quis. Nunc tincidunt sem vel velit auctor, sit amet pretium justo mollis. Nunc felis nisl, fringilla sed iaculis pharetra, gravida ac risus. Proin luctus dapibus tellus, quis imperdiet enim. Curabitur scelerisque ex vel sapien euismod, sit amet lacinia arcu mollis. Pellentesque lacinia orci id interdum finibus. Praesent maximus, augue sit amet porta cursus, felis lorem dictum ante, a hendrerit lectus diam quis ligula. Praesent vel ipsum ipsum. Phasellus malesuada ornare augue, ac euismod velit pharetra eu. Integer eu sollicitudin purus, sit amet molestie magna. Fusce viverra ante quis ante tincidunt, a lobortis sem imperdiet. Etiam diam massa, blandit non neque sagittis, hendrerit varius ex. f just leaving this blog be.
+Buey.

@@ -3,4 +3,31 @@ title: blog
 order: 20
 ---
 
-<h1>blog page</h1>
+{% css %}
+{% include "pages/blog.css" %}
+{% endcss %}
+<main>
+    <section class="pagination">
+        {% for p in posts %}[{{ p.data.id }}]{% endfor %}
+        <a href="{{ pagination.href.previous }}">
+            <small>&lt;&lt;</small>
+        </a>
+        <small>{{ pagination.pageNumber + 1 }} / {{ pagination.pages.length }}</small>
+        <a href="{{ pagination.href.next }}">
+            <small>&gt;&gt;</small>
+        </a>
+    </section>
+    <section class="post-list">
+        {%- for post in pagination.items | sort(attribute='id') -%}
+            <a href="{{ post.url }}">
+                <article>
+                    <div class="post-header">
+                        <h3 class="post-title">{{ post.data.title }}</h3>
+                        <small class="post-date"><time datetime="{{ page.date | htmlDate }}">{{ page.date | readableDate }}</time></small>
+                    </div>
+                    <p>{{ post.data.description }}</p>
+                </article>
+            </a>
+        {%- endfor -%}
+    </section>
+</main>
